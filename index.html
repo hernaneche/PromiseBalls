@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Balls</title>
+  <link rel="stylesheet" href="./css/balls.css">
+  <script type="text/javascript" src="./js/sounds.js"></script>
+  <script type="text/javascript" src="./js/balls.min.js"></script>  
+</head>
+
+<body>
+  <div id="main" class="main-container">
+    <div>
+      <div id="arena1" class="arena"></div>
+      <div class="buttons">
+        <div class="checkboxs">
+          <label for="collision" class="label">
+            <input type="checkbox" id="collision" value="0">collision</label>
+        </div>
+        <select id="launch" class="button selector">
+          <option>serial</option>
+          <option>serial wait</option>
+          <option>parallel</option>
+        </select>
+        <select id="mode" class="button selector">
+          <option>race</option>
+          <option>all</option>
+          <option>allSettled</option>          
+        </select>
+        <input type="number" id="ballCount" class="number" value="3" min="1"></input>
+        <button type="button" id="reset" class="button red">Reset</button>
+        <button type="button" id="start" class="button green"></button>
+      </div>
+    </div>
+    <div class="console" id="webConsole"></div>
+  </div>
+  <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+
+</html>
