@@ -192,6 +192,7 @@ function initListeners() {
   });
 
   document.getElementById("reset").addEventListener("mousedown", () => {
+    resetConsole();
     reloadPage();
   });
 
