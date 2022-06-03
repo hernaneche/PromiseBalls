@@ -80,6 +80,12 @@ html {
   flex-direction: row;
 }
 
+@media (max-width: 1500px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+
 .number {
   font-weight: bold;
   background: lightsteelblue;

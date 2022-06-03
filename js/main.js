@@ -209,11 +209,11 @@ function init() {
   initBallScene("arena1", mainBallsArray);
 
   let resizeFunc = () => {
-    var width = window.innerWidth || document.documentElement.clientWidth;
-    var height = window.innerHeight || document.documentElement.clientHeight;
-    var canvas = [...document.getElementsByTagName("canvas")];
+    //var width = window.innerWidth || document.documentElement.clientWidth;
+    //var height = window.innerHeight || document.documentElement.clientHeight;
+    var canvasArr = [...document.getElementsByTagName("canvas")];
 
-    canvas.forEach((canvas) => {
+    canvasArr.forEach((canvas) => {
       canvas.style.width = "100%";
       canvas.style.height = "100%";
       canvas.width = canvas.offsetWidth;
